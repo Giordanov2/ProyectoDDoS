@@ -2,6 +2,8 @@
 
 ## Sistema de red interconectada para la prevención de ataques cibernéticos con el uso Deep Learning para entidades bancaria 
 
+### Aplicacion Web desarrollada mediante el uso de Djano y Templates de HTML con Bootstrap
+
 Para correr el proyecto primero deberemos inicializar un entorno virtual en Python, en `envname` debera ir el nombre del entorno virtual que desean crear
 
  `virtualenv envname`
