@@ -1,7 +1,8 @@
 # ProyectoDDoS
 
-Para correr el proyecto primero deberemos inicializar un entorno virtual en Python
-En `envname` debera ir el nombre del entorno virtual que desea crear
+## Sistema de red interconectada para la prevención de ataques cibernéticos con el uso Deep Learning para entidades bancaria 
+
+Para correr el proyecto primero deberemos inicializar un entorno virtual en Python, en `envname` debera ir el nombre del entorno virtual que desean crear
 
  `virtualenv envname`
 
