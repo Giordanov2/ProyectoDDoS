@@ -1,6 +1,6 @@
 # ProyectoDDoS 💣
 
-## Sistema de red interconectada para la prevención de ataques cibernéticos con el uso Deep Learning para entidades bancaria 
+## Sistema de red interconectada para la prevención de ataques cibernéticos con el uso Deep Learning para entidades bancarias
 
 ### Aplicacion Web desarrollada mediante el uso de Djano y Templates de HTML con Bootstrap
 
