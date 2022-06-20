@@ -1,0 +1,41 @@
+{% load static %}
+<style>
+  .hello-msg{
+    font-size: 18px;
+    color: white;
+    margin-right: 20px;
+  }
+</style>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <img src="{% static 'images/ddos_logo.png' %}" width="50" height="50">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+        </li>
+        </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Mi Perfil</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Analisis de Red
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Realizar Analisis</a>
+            <a class="dropdown-item" href="#">Ver Analisis</a>
+        </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Ayuda</a>
+          </li>
+
+      </ul>
+
+      <span class="hello-msg">Hola, {{request.user}}</span>
+      <span> <a class="hello-msg" href="{% url 'logout' %}"> Salir</a></span>
+    </div>
+  </nav>

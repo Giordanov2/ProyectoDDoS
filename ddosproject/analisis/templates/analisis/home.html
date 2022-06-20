@@ -1,0 +1,45 @@
+{% extends 'analisis/main.html' %}
+
+{% block content %}
+
+{% include 'analisis/status.html' %}
+
+<br>
+
+<div class="row">
+	<div class="col-md-5">
+		<h5>Mitigaciones</h5>
+		<hr>
+		<div class="card card-body">
+			<a class="btn btn-primary  btn-sm btn-block" href="">Realizar Mitigacion</a>
+			<table class="table table-sm">
+				<tr>
+					<th></th>
+					<th>Analisis</th>
+					<th>IP</th>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+
+	<div class="col-md-7">
+		<h5>Analisis</h5>
+		<hr>
+		<div class="card card-body">
+			<a class="btn btn-primary  btn-sm btn-block" href="">Realizar Analisis</a>
+			<table class="table table-sm">
+				<tr>
+					<th>IP Origen</th>
+					<th>Puerto Origen</th>
+					<th>Puerto Destino</th>
+					<th>IP Destino</th>
+					<th>Tipo de Protocolo</th>
+				</tr>
+		
+			</table>
+		</div>
+	</div>
+
+</div>
+{% endblock %}
