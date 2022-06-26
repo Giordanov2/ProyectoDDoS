@@ -9,7 +9,7 @@ from  django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
-from .forms import CreateUserForm
+from .forms import AnalistaForm, CreateUserForm
 
 def registerPage(request):
     if request.user.is_authenticated:
@@ -56,4 +56,14 @@ def home(request):
 
 @login_required(login_url='login')
 def editProfile(request):
-    return render(request, 'analisis/editprofile.html')
+    analista = request.user.analista
+    form = AnalistaForm(instance=analista)
+
+    if request.method == 'POST':
+        form = AnalistaForm(request.POST, request.FILES, instance=analista)
+        if form.is_valid():
+            form.save()
+ 
+
+    context = {'form': form}
+    return render(request, 'analisis/editprofile2.html', context)

@@ -1,6 +1,9 @@
+from os import stat
 from django.urls import path
 from django.contrib.auth import views as aut_views
 from . import views
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     path('', views.home, name="home"),
@@ -16,3 +19,4 @@ urlpatterns = [
     path('reset_password_complete/', aut_views.PasswordResetCompleteView.as_view(), name="password_reset_complete"),
 ]
 
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
