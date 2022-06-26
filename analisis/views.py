@@ -54,4 +54,6 @@ def logoutUser(request):
 def home(request):
     return render(request, 'analisis/home.html')
 
-
+@login_required(login_url='login')
+def editProfile(request):
+    return render(request, 'analisis/editprofile.html')
