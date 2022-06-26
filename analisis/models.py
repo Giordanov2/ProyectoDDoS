@@ -1,9 +1,5 @@
-from operator import mod
-from pickle import TRUE
-import profile
-from statistics import mode
-from tkinter.tix import Tree
-from unicodedata import name
+from tokenize import blank_re
+from django.contrib.auth.models import User
 from django.db import models
 
 # Create your models here.
@@ -25,15 +21,12 @@ class Paquete(models.Model):
     port_dest = models.IntegerField(null=True)
     protocol = models.CharField(max_length=5)
 
-
 class Analista(models.Model):
-    name = models.CharField(max_length=200, null=True)
-    username = models.CharField(max_length=200, null=True)
-    phone = models.CharField(max_length=200, null=True)
-    email = models.CharField(max_length=200, null=True)
+    user = models.OneToOneField(User, on_delete=models.CASCADE, null=True)
+    name = models.CharField(max_length=50, null=True)
+    lastname = models.CharField(max_length=50, null=True)
+    email = models.EmailField(max_length=254, null=True)
     profile_pic = models.ImageField(null=True, blank=True)
-    date_created = models.CharField(max_length=200, null=True)
-
-    def __str__(self):
+    date_created = models.DateTimeField(auto_now_add=True, null=True)
+    def __str__(self) :
         return self.name
-

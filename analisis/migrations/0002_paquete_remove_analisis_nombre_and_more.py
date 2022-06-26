@@ -21,10 +21,6 @@ class Migration(migrations.Migration):
                 ('protocol', models.CharField(max_length=5)),
             ],
         ),
-        migrations.RemoveField(
-            model_name='analisis',
-            name='nombre',
-        ),
         migrations.AddField(
             model_name='analisis',
             name='cantidad_paquetes_analizados',
