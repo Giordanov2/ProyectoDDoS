@@ -67,3 +67,7 @@ def editProfile(request):
 
     context = {'form': form}
     return render(request, 'analisis/editprofile2.html', context)
+
+@login_required(login_url='login')
+def faq(request):
+    return render(request, 'analisis/faq.html')
