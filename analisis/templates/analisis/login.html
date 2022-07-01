@@ -14,13 +14,13 @@
 			margin: 0;
 			padding: 0;
 			height: 100%;
-			background: #7abecc !important;
+			background:  #162534 !important;
 		}
 		.user_card {
 			width: 350px;
 			margin-top: auto;
 			margin-bottom: auto;
-			background: #74cfbf;
+			background: #09f;
 			position: relative;
 			display: flex;
 			justify-content: center;
@@ -42,6 +42,14 @@
 			
 		}
 
+		#link{
+			color: #fff;
+		}
+
+		#link2{
+			color: #162534;
+		}
+
 		.login_btn {
 			width: 100%;
 			background: #33ccff !important;
@@ -55,7 +63,7 @@
 			padding: 0 2rem;
 		}
 		.input-group-text {
-			background: #f7ba5b !important;
+			background: #162534 !important;
 			color: white !important;
 			border: 0 !important;
 			border-radius: 0.25rem 0 0 0.25rem !important;
@@ -112,11 +120,11 @@
                 {% endfor %}
 
 				<div class="mt-4">
-					<div class="d-flex justify-content-center links">
-						Aún no tienes cuenta? <a href="{% url 'register' %}" class="ml-2">Registrate</a>
+					<div class="d-flex justify-content-center links" id="link">
+						Aún no tienes cuenta? <a href="{% url 'register' %}" class="ml-2" id="link2">Registrate</a>
 					</div>
-					<div class="d-flex justify-content-center links">
-						Olvidaste tu contraseña? <a href="{% url 'reset_password' %}" class="ml-2">Ingresa aqui</a>
+					<div class="d-flex justify-content-center links" id="link">
+						Olvidaste tu contraseña? <a href="{% url 'reset_password' %}" class="ml-2" id="link2">Ingresa aqui</a>
 					</div>		
 				</div>
 			</div>
