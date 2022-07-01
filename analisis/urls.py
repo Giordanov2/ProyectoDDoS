@@ -12,6 +12,7 @@ urlpatterns = [
     path('register/', views.registerPage, name="register"),
     path('editprofile/', views.editProfile, name="editprofile"),
     path('faq/', views.faq, name="faq"),
+    path('set_analysis', views.set_analaysis, name="set_analysis"),
 
 
     path('reset_password/', aut_views.PasswordResetView.as_view(), name="reset_password"),

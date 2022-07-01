@@ -71,3 +71,7 @@ def editProfile(request):
 @login_required(login_url='login')
 def faq(request):
     return render(request, 'analisis/faq.html')
+
+@login_required(login_url='login')
+def set_analaysis(request):
+    return render(request, 'analisis/set_analysis.html')
