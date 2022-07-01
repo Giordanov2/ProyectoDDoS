@@ -1,4 +1,3 @@
-from os import stat
 from django.urls import path
 from django.contrib.auth import views as aut_views
 from . import views
@@ -12,7 +11,9 @@ urlpatterns = [
     path('register/', views.registerPage, name="register"),
     path('editprofile/', views.editProfile, name="editprofile"),
     path('faq/', views.faq, name="faq"),
-    path('set_analysis', views.set_analaysis, name="set_analysis"),
+    path('set_analysis/', views.set_analaysis, name="set_analysis"),
+    path('analysis_resume/', views.analysis_resume, name="analysis_resume"),
+    path('test_view/', views.test_view, name="test_view"),
 
 
     path('reset_password/', aut_views.PasswordResetView.as_view(), name="reset_password"),

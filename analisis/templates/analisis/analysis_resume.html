@@ -1,0 +1,30 @@
+{% extends 'analisis/main.html' %}
+{% block content %}
+{% include 'analisis/status2.html' %}
+
+<body>
+    <br>   
+        <div class="d-flex justify-content-center">
+            <a class="btn btn-primary" href="#" role="button">Mitigar</a>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-cente">
+            <hr>
+            <div class="card card-body">
+                <table class="table table-sm">
+                    <tr>
+                        <th>IP Origen</th>
+                        <th>Puerto Origen</th>
+                        <th>Puerto Destino</th>
+                        <th>IP Destino</th>
+                        <th>Tipo de Protocolo</th>
+                    </tr>
+            
+                </table>
+            </div>
+        </div>
+    
+    </div> 
+</body>
+
+{% endblock content %}

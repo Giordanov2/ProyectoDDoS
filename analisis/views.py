@@ -75,3 +75,10 @@ def faq(request):
 @login_required(login_url='login')
 def set_analaysis(request):
     return render(request, 'analisis/set_analysis.html')
+
+@login_required(login_url='login')
+def analysis_resume(request):
+    return render(request, 'analisis/analysis_resume.html')
+
+def test_view(request):
+    return render(request, 'analisis/index.html')
